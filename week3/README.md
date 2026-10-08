@@ -1,0 +1,4 @@
+1. We have 2 sorted lists. We have to merge this lists into a sorted list and return head of the list
+2. First of all, we check if lists are null. Then we compare 1st elements of lists, and make the smallest to "head". In while loop, until 2 lists are done, we compare elements and put smaller one at "curr", and move to the next element of list from which we took element. Finally, if one list is empty, we put remainig numbers to the end.
+3. Time complexity: O(n), because in each iteration we move by 1 element, so it equals to sum of length of lists.
+4. There's no more efficient approach in terms of time complexity. But we can use recursive method to make space complexity smaller.

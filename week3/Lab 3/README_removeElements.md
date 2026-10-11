@@ -1,0 +1,4 @@
+1. We have a linked list and an integer val. We need to remove all nodes that have value equal to val, and return the new head.
+2. First, in while loop, while head is not null and head.val == val, we move head forward to remove matching values from the beginning. Then we use "curr" pointer starting at head. While curr and curr.next are not null, if curr.next.val == val, we skip it by setting curr.next = curr.next.next. Otherwise, we move "curr" forward to curr.next. Finally, we return head.
+3. Time complexity: O(n), where n is the number of nodes in the list, because we iterate through the list once.
+4. This approach is already optimal in both time O(n) and space O(1), because we modify pointers in-place without using extra memory. An alternative approach is using a dummy node or recursion.
